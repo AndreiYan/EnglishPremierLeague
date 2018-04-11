@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.englishpremierleague.Main6Activity"
+    android:orientation="vertical"
+    android:background="#111C3C">
+
+    <TextView
+        android:id="@+id/Thanx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank you for taking the quiz"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/customer_Name"
+        android:layout_below="@+id/Thanx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hola"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/next_to_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="View Score"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+</RelativeLayout>

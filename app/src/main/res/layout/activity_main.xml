@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.englishpremierleague.MainActivity"
+    android:orientation="vertical"
+    android:background="#111C3C">
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/epl_2"
+         />
+
+    <EditText
+        android:id="@+id/customer_Name"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Your Name To start Quiz"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:inputType="textCapWords"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Start"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>
