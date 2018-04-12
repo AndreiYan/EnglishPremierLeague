@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 } else {
                     Toast.makeText(MainActivity.this, "Please enter your name to start the quiz!", Toast.LENGTH_SHORT).show();
-                    return;
+
+
                 }
 
 
