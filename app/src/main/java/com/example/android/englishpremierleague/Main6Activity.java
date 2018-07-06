@@ -9,6 +9,7 @@ import android.widget.TextView;
 public class Main6Activity extends AppCompatActivity {
 
     TextView displayName;
+    TextView displaycustmoerScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +19,12 @@ public class Main6Activity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         String name = extras.getString("QuizName");
+
         displayName = findViewById(R.id.customer_Name);
         displayName.setText(name);
+        String score = extras.getString("finalScore");
+        displaycustmoerScore = findViewById(R.id.customer_Score);
+        displaycustmoerScore.setText(score);
 
     }
 
