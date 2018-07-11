@@ -17,7 +17,6 @@ public class Page2Activity extends AppCompatActivity {
     int score = 0;
 
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page2);
@@ -31,6 +30,7 @@ public class Page2Activity extends AppCompatActivity {
         String name2 = extras.getString("QuizName");
         theName = name2;
     }
+
 
 
     public void setSubmit2Button() {
@@ -81,46 +81,74 @@ public class Page2Activity extends AppCompatActivity {
         Button submit4Button = findViewById(R.id.submit4);
         submit4Button.setOnClickListener(new View.OnClickListener() {
 
+//            public void onClick(View view) {
+//                Ch1 = (CheckBox) findViewById(R.id.checkboxArsenal);
+//                Ch2 = (CheckBox) findViewById(R.id.checkboxChelsea);
+//                Ch3 = (CheckBox) findViewById(R.id.checkboxEverton);
+//                Ch4 = (CheckBox) findViewById(R.id.checkboxLiverpool);
+//                Ch5 = (CheckBox) findViewById(R.id.checkboxMunt);
+//                Ch6 = (CheckBox) findViewById(R.id.checkboxTotts);
+//                  If(checkboxArsenal.isChecked&&checkboxChelsea.isChecked&&
+//                      checkboxEverton.isChecked&&checkboxLiverpool.isChecked&&
+//                      checkboxMunt.isChecked&&checkboxTotts.isChecked){
+                        score = score +1;
+                    else
+                        score = score + 0;
+//
+//                  }
+//            }
+
             public void onClick(View view) {
                 boolean checked = ((CheckBox) view).isChecked();
                 switch (view.getId()) {
                     case R.id.checkboxArsenal:
                         if (checked)
                             score = score + 1;
-                        break;
+                        else
+                            score = score + 0;
+                            break;
 
                     case R.id.checkboxChelsea:
                         if (checked)
                             score = score + 1;
-
+                        else
+                            score = score + 0;
                         break;
+
 
                     case R.id.checkboxEverton:
                         if (checked)
                             score = score + 1;
-
+                        else
+                            score = score + 0;
                         break;
 
                     case R.id.checkboxLiverpool:
                         if (checked)
                             score = score + 1;
+                        else
+                            score = score + 0;
 
                         break;
                     case R.id.checkboxMunt:
                         if (checked)
                             score = score + 1;
+                        else
+                            score = score + 0;
 
                         break;
                     case R.id.checkboxTotts:
                         if (checked)
                             score = score + 1;
+                        else
+                            score = score + 0;
 
                         break;
 
                 }
 
 
-            }
+           }
 
 
         });
@@ -145,7 +173,7 @@ public class Page2Activity extends AppCompatActivity {
                 Intent intent = new Intent(Page2Activity.this, Main6Activity.class);
                 Bundle extras = new Bundle();
                 extras.putString("QuizName", finalName);
-                extras.putInt(finalScore, score);
+                extras.putString("score1", finalScore);
                 intent.putExtras(extras);
                 startActivity(intent);
             }

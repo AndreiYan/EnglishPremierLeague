@@ -23,6 +23,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="310dp"
                 android:background="@drawable/tots" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Who's Badge it is"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="italic" />
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -132,6 +140,7 @@
                 android:textStyle="italic" />
 
             <android.support.v7.widget.AppCompatCheckBox
+
                 android:id="@+id/checkboxArsenal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -140,7 +149,8 @@
                 android:text="Arsenal"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF" />
+                app:buttonTint="#FFFFFF"
+                />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxChelsea"
@@ -151,7 +161,8 @@
                 android:text="Chelsea"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF" />
+                app:buttonTint="#FFFFFF"
+                />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxEverton"
@@ -162,7 +173,8 @@
                 android:text="Everton"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF" />
+                app:buttonTint="#FFFFFF"
+                />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxLiverpool"
@@ -173,7 +185,8 @@
                 android:text="Liverpool"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF" />
+                app:buttonTint="#FFFFFF"
+                />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxMunt"
@@ -184,7 +197,8 @@
                 android:text="Manchester Unt"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF" />
+                app:buttonTint="#FFFFFF"
+                />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxTotts"
@@ -195,7 +209,8 @@
                 android:text="Tottenham"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF" />
+                app:buttonTint="#FFFFFF"
+                />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxMcity"
@@ -206,7 +221,8 @@
                 android:text="Manchester City"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF" />
+                app:buttonTint="#FFFFFF"
+                />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxWham"
@@ -217,7 +233,8 @@
                 android:text="West Ham"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF" />
+                app:buttonTint="#FFFFFF"
+                />
 
             <Button
                 android:id="@+id/submit4"

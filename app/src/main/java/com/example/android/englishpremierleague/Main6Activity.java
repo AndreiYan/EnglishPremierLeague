@@ -19,10 +19,11 @@ public class Main6Activity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         String name = extras.getString("QuizName");
+        String score = extras.getString("score1");
 
         displayName = findViewById(R.id.customer_Name);
         displayName.setText(name);
-        String score = extras.getString("finalScore");
+
         displaycustmoerScore = findViewById(R.id.customer_Score);
         displaycustmoerScore.setText(score);
 
