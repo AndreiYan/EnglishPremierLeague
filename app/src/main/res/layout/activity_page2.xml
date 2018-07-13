@@ -80,13 +80,13 @@
             </RadioGroup>
 
 
-            <Button
-                android:id="@+id/submit2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:text="Submit" />
+            <!--<Button-->
+                <!--android:id="@+id/submit2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:text="Submit" />-->
         </LinearLayout>
 
         <LinearLayout
@@ -115,13 +115,13 @@
                 android:textColor="#FFFFFF"
                 android:textColorHint="#FFFFFF" />
 
-            <Button
-                android:id="@+id/submit3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:text="Submit" />
+            <!--<Button-->
+                <!--android:id="@+id/submit3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:text="Submit" />-->
         </LinearLayout>
 
         <LinearLayout
@@ -234,14 +234,15 @@
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
                 app:buttonTint="#FFFFFF"
+
                 />
 
-            <Button
-                android:id="@+id/submit4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:text="Submit" />
+            <!--<Button-->
+                <!--android:id="@+id/submit4"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:text="Submit" />-->
         </LinearLayout>
 
         <LinearLayout
