@@ -20,7 +20,7 @@
         android:layout_weight="0"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Enter Your Name To start Quiz"
+        android:hint="@string/hello"
         android:textColorHint="#FFFFFF"
         android:textColor="#FFFFFF"
         android:inputType="textCapWords"

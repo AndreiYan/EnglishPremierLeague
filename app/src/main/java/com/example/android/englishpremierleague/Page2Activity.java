@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class Page2Activity extends AppCompatActivity {
     String theName;
     int score = 0;
-    CheckBox Ch1, Ch2, Ch3, Ch4, Ch5, Ch6;
+    CheckBox Ch1, Ch2, Ch3, Ch4, Ch5, Ch6, Ch7, Ch8;
 
 
     @Override
@@ -30,6 +30,8 @@ public class Page2Activity extends AppCompatActivity {
         Ch4 = findViewById(R.id.checkboxLiverpool);
         Ch5 = findViewById(R.id.checkboxMunt);
         Ch6 = findViewById(R.id.checkboxTotts);
+        Ch7 = findViewById(R.id.checkboxMcity);
+        Ch8 = findViewById(R.id.checkboxWham);
 
         configureStartButton();
 
@@ -67,17 +69,14 @@ public class Page2Activity extends AppCompatActivity {
 
                 }
 
-
                 if (Ch1.isChecked() && Ch2.isChecked() &&
                         Ch3.isChecked() && Ch4.isChecked() &&
-                        Ch5.isChecked() && Ch6.isChecked()) {
+                        Ch5.isChecked() && Ch6.isChecked() && !Ch7.isChecked() && !Ch8.isChecked()) {
                     score = score + 3;
                 } else {
                     score = score + 0;
 
                 }
-
-
                 String finalName = theName;
                 String finalScore = Integer.toString(score);
                 Intent intent = new Intent(Page2Activity.this, Main6Activity.class);
@@ -86,6 +85,7 @@ public class Page2Activity extends AppCompatActivity {
                 extras.putString("score1", finalScore);
                 intent.putExtras(extras);
                 startActivity(intent);
+                score = 0;
             }
         });
 

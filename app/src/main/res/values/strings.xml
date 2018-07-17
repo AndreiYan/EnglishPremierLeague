@@ -1,4 +1,28 @@
 <resources>
     <string name="app_name">English Premier League</string>
+    <string name="hello">Enter Your Name To start Quiz</string>
+    <string name="Q1_Badge">What team wears that Badge?</string>
+    <string name="Q1_CSKA">CSKA</string>
+    <string name="Q1_WestHam">West Ham</string>
+    <string name="Q1_Tots">Tottenham</string>
+    <string name="Q1_Ars">Arsenal</string>
+    <string name="Q1_CP">Crystal Palace</string>
+    <string name="Q2_ManagersName">Please Enter Managers Last Name</string>
+    <string name="Q3_Text">There are only few clubs that have never relegated from Premier League. What are they?</string>
+    <string name="Q3_Chls">Chelsea</string>
+    <string name="Q3_EV">Everton</string>
+    <string name="Q3_Liver">Liverpool</string>
+    <string name="Q3_Mut">Man. United</string>
+    <string name="Q3_Mc">Man. City</string>
+    <string name="Q4_Text">Manchester United have won the most championships. How Many?</string>
+    <string name="Q4_20">20</string>
+    <string name="Q4_18">18</string>
+    <string name="Q4_25">25</string>
+    <string name="Q4_13">13</string>
+    <string name="Q4_21">21</string>
+    <string name="finalSub">Submit</string>
+    <string name="Thx">Thank you for taking the quiz</string>
+    <string name="score">Your score is \u0020\u0020</string>
+    </resources>
 
-</resources>
+

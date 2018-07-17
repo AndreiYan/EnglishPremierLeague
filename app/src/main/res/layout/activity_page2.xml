@@ -23,26 +23,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="310dp"
                 android:background="@drawable/tots" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Who's Badge it is"
+                android:text="@string/Q1_Badge"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
                 android:textStyle="italic" />
 
             <RadioGroup
+                android:id="@+id/RadioGrouptotts"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/RadioGrouptotts">
+                android:layout_height="match_parent">
 
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="#FFFFFF"
-                    android:text="CSKA"
+                    android:text="@string/Q1_CSKA"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
 
@@ -50,7 +51,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="#FFFFFF"
-                    android:text="West Ham"
+                    android:text="@string/Q1_WestHam"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
 
@@ -58,7 +59,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="#FFFFFF"
-                    android:text="Tottenham"
+                    android:text="@string/Q1_Tots"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
 
@@ -66,7 +67,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="#FFFFFF"
-                    android:text="Arsenal"
+                    android:text="@string/Q1_Ars"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
 
@@ -74,7 +75,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:buttonTint="#FFFFFF"
-                    android:text="Crystal Palace"
+                    android:text="@string/Q1_CP"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
             </RadioGroup>
@@ -103,7 +104,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_weight="0"
                 android:gravity="center"
-                android:hint="Please Enter Managers Last Name"
+                android:hint="@string/Q2_ManagersName"
                 android:inputType="textCapWords"
                 android:textColor="#FFFFFF"
                 android:textColorHint="#FFFFFF" />
@@ -132,11 +133,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:text="Arsenal"
+                android:text="@string/Q1_Ars"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF"
-                />
+                app:buttonTint="#FFFFFF" />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxChelsea"
@@ -144,11 +144,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:text="Chelsea"
+                android:text="@string/Q3_Chls"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF"
-                />
+                app:buttonTint="#FFFFFF" />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxEverton"
@@ -156,11 +155,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:text="Everton"
+                android:text="@string/Q3_EV"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF"
-                />
+                app:buttonTint="#FFFFFF" />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxLiverpool"
@@ -168,11 +166,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:text="Liverpool"
+                android:text="@string/Q3_Liver"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF"
-                />
+                app:buttonTint="#FFFFFF" />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxMunt"
@@ -180,11 +177,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:text="Manchester Unt"
+                android:text="@string/Q3_Mut"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF"
-                />
+                app:buttonTint="#FFFFFF" />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxTotts"
@@ -192,11 +188,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:text="Tottenham"
+                android:text="@string/Q1_Tots"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF"
-                />
+                app:buttonTint="#FFFFFF" />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxMcity"
@@ -204,11 +199,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:text="Manchester City"
+                android:text="@string/Q3_Mc"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
-                app:buttonTint="#FFFFFF"
-                />
+                app:buttonTint="#FFFFFF" />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/checkboxWham"
@@ -216,11 +210,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
-                android:text="West Ham"
+                android:text="@string/Q1_WestHam"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
                 app:buttonTint="#FFFFFF"
-
                 />
 
         </LinearLayout>
@@ -235,16 +228,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Manchester United have won the most championships. How Many?"
+                android:text="@string/Q4_Text"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="30dp"
                 android:textStyle="italic" />
 
             <RadioGroup
+                android:id="@+id/RadioGroupMut"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/RadioGroupMut">
+                android:layout_height="match_parent">
 
                 <RadioButton
                     android:layout_width="wrap_content"
@@ -252,7 +245,7 @@
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="10dp"
                     android:buttonTint="#FFFFFF"
-                    android:text="20"
+                    android:text="@string/Q4_20"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
 
@@ -262,7 +255,7 @@
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="10dp"
                     android:buttonTint="#FFFFFF"
-                    android:text="25"
+                    android:text="@string/Q4_25"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
 
@@ -272,7 +265,7 @@
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="10dp"
                     android:buttonTint="#FFFFFF"
-                    android:text="18"
+                    android:text="@string/Q4_18"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
 
@@ -282,7 +275,7 @@
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="10dp"
                     android:buttonTint="#FFFFFF"
-                    android:text="13"
+                    android:text="@string/Q4_13"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
 
@@ -292,7 +285,7 @@
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="10dp"
                     android:buttonTint="#FFFFFF"
-                    android:text="21"
+                    android:text="@string/Q4_21"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
             </RadioGroup>

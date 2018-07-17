@@ -4,12 +4,13 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Main6Activity extends AppCompatActivity {
 
     TextView displayName;
-    TextView displaycustmoerScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +25,14 @@ public class Main6Activity extends AppCompatActivity {
         displayName = findViewById(R.id.customer_Name);
         displayName.setText(name);
 
-        displaycustmoerScore = findViewById(R.id.customer_Score);
-        displaycustmoerScore.setText(score);
+        String Congrats = getResources().getString(R.string.score) + score;
+        Toast toast = Toast.makeText(Main6Activity.this,
+                Congrats, Toast.LENGTH_LONG);
+        toast.setGravity(Gravity.CENTER | Gravity.CENTER_HORIZONTAL, 0, 0);
+        toast.show();
+
 
     }
-
 
 
 }

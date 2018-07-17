@@ -13,7 +13,7 @@
         android:id="@+id/Thanx"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Thank you for taking the quiz"
+        android:text="@string/Thx"
         android:textSize="30dp"
         android:textColor="#FFFFFF"
         android:textAlignment="center"
