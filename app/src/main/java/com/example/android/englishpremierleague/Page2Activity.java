@@ -15,23 +15,21 @@ import android.widget.Toast;
 public class Page2Activity extends AppCompatActivity {
     String theName;
     int score = 0;
-    CheckBox Ch1, Ch2, Ch3, Ch4, Ch5, Ch6, Ch7, Ch8;
-
+    CheckBox q3_Ch1, q3_Ch2, q3_Ch3, q3_Ch4, q3_Ch5, q3_Ch6, q3_Ch7, q3_Ch8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page2);
 
-        Ch1 = findViewById(R.id.checkboxArsenal);
-        Ch2 = findViewById(R.id.checkboxChelsea);
-        Ch3 = findViewById(R.id.checkboxEverton);
-        Ch4 = findViewById(R.id.checkboxLiverpool);
-        Ch5 = findViewById(R.id.checkboxMunt);
-        Ch6 = findViewById(R.id.checkboxTotts);
-        Ch7 = findViewById(R.id.checkboxMcity);
-        Ch8 = findViewById(R.id.checkboxWham);
+        q3_Ch1 = findViewById(R.id.checkboxArsenal);
+        q3_Ch2 = findViewById(R.id.checkboxChelsea);
+        q3_Ch3 = findViewById(R.id.checkboxEverton);
+        q3_Ch4 = findViewById(R.id.checkboxLiverpool);
+        q3_Ch5 = findViewById(R.id.checkboxMunt);
+        q3_Ch6 = findViewById(R.id.checkboxTotts);
+        q3_Ch7 = findViewById(R.id.checkboxMcity);
+        q3_Ch8 = findViewById(R.id.checkboxWham);
 
         configureStartButton();
 
@@ -41,18 +39,11 @@ public class Page2Activity extends AppCompatActivity {
     }
 
     public void configureStartButton() {
-
         Button startButton = findViewById(R.id.score);
         startButton.setOnClickListener(new View.OnClickListener() {
 
 
             public void onClick(View view) {
-
-                RadioGroup radioGroup2 = findViewById(R.id.RadioGroupMut);
-                int checkedRadioButtonId2 = radioGroup2.getCheckedRadioButtonId();
-                if (checkedRadioButtonId2 == 1) {
-                    score = score + 3;
-                }
 
                 RadioGroup radioGroup1 = findViewById(R.id.RadioGrouptotts);
                 int checkedRadioButtonId1 = radioGroup1.getCheckedRadioButtonId();
@@ -60,23 +51,28 @@ public class Page2Activity extends AppCompatActivity {
                     score = score + 3;
                 }
 
+                RadioGroup radioGroup2 = findViewById(R.id.RadioGroupMut);
+                int checkedRadioButtonId2 = radioGroup2.getCheckedRadioButtonId();
+                if (checkedRadioButtonId2 == 1) {
+                    score = score + 3;
+                }
+
                 EditText name = findViewById(R.id.manager_Name);
                 String managersName = name.getText().toString();
-                if (name != null && managersName.equals("Wenger")) {
+                if (name != null && managersName.equalsIgnoreCase("Wenger")) {
                     score = score + 3;
                 } else {
                     Toast.makeText(Page2Activity.this, "Please enter the Last Name", Toast.LENGTH_SHORT).show();
-
                 }
 
-                if (Ch1.isChecked() && Ch2.isChecked() &&
-                        Ch3.isChecked() && Ch4.isChecked() &&
-                        Ch5.isChecked() && Ch6.isChecked() && !Ch7.isChecked() && !Ch8.isChecked()) {
+                if (q3_Ch1.isChecked() && q3_Ch2.isChecked() &&
+                        q3_Ch3.isChecked() && q3_Ch4.isChecked() &&
+                        q3_Ch5.isChecked() && q3_Ch6.isChecked() && !q3_Ch7.isChecked() && !q3_Ch8.isChecked()) {
                     score = score + 3;
                 } else {
                     score = score + 0;
-
                 }
+
                 String finalName = theName;
                 String finalScore = Integer.toString(score);
                 Intent intent = new Intent(Page2Activity.this, Main6Activity.class);
@@ -88,8 +84,5 @@ public class Page2Activity extends AppCompatActivity {
                 score = 0;
             }
         });
-
-
     }
-
 }

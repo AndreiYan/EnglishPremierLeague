@@ -30,11 +30,7 @@ public class Main6Activity extends AppCompatActivity {
                 Congrats, Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER | Gravity.CENTER_HORIZONTAL, 0, 0);
         toast.show();
-
-
     }
-
-
 }
 
 

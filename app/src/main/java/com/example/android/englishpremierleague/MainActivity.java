@@ -18,13 +18,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         configureStartButton();
-
-
-
     }
 
     public void configureStartButton(){
-
         Button startButton = findViewById(R.id.startButton);
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,16 +36,10 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 } else {
                     Toast.makeText(MainActivity.this, "Please enter your name to start the quiz!", Toast.LENGTH_SHORT).show();
-
-
                 }
-
-
             }
         });
         }
-
-
     }
 
 
